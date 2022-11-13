@@ -1,0 +1,65 @@
+#button:active {
+    transform: scale(0.5);
+}
+.ab:hover {
+    fill: #2a4674;
+}
+.bb:hover {
+    fill: steelblue;
+}
+.cb:hover {
+    fill: rgb(48, 72, 96);
+}
+.db:hover {
+    fill: thistle;
+}
+
+.ab:active {
+    fill: yellowgreen;
+}
+.bb:active {
+    fill: rgb(200, 255, 0);
+}
+.cb:active {
+    fill: yellow;
+}
+.db:active {
+
+}
+
+#star {
+    animation: star 5s alternate infinite;
+}
+
+#square {
+    animation: square 1.5s ease-in infinite alternate;
+}
+
+#circle {
+    animation: circle 7s alternate-reverse infinite;
+}
+
+@keyframes star {
+    0%   {fill: red;}
+    25%  {fill: yellow;}
+    50%  {fill: blue;}
+    100% {fill: green;}
+}
+
+@keyframes square {
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+}
+
+@keyframes circle {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
